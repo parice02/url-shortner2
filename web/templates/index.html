@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma première page web avec Django</title>
-</head>
-
-<body>
-    <h1>Première page</h1>
-    <p>Ceci est ma première page développée avec le framework python Django version 4.2</p>
-    <p>{{variable}}</p>
-    <p>{{name}} {{prenom}}</p>
-
-</body>
-
-</html>
+<section id="urlbox">
+    <h1>Paste the URL to be shortened</h1>
+    <form action="shortener.php" method="post">
+        <div id="formurl">
+            <input type="text" name="u" placeholder="Enter the link here">
+            <div id="formbutton">
+                <input type="submit" value="Shorten URL">
+            </div>
+        </div>
+    </form>
+    <p class="boxtextcenter">ShortURL is a free tool to shorten URLs and generate short links<br>URL shortener
+        allows to create a shortened link making it easy to share</p>
+</section>
