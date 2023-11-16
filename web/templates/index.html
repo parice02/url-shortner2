@@ -4,7 +4,7 @@
 {% block content %}
 <section id="urlbox">
     <h1>Paste the URL to be shortened</h1>
-    <form action="shortener.php" method="post">
+    <form method="post">
         <div id="formurl">
             <input type="text" name="u" placeholder="Enter the link here">
             <div id="formbutton">
@@ -12,7 +12,9 @@
             </div>
         </div>
     </form>
-    <p class="boxtextcenter">ShortURL is a free tool to shorten URLs and generate short links<br>URL shortener
-        allows to create a shortened link making it easy to share</p>
+    <p class="boxtextcenter">
+        ShortURL is a free tool to shorten URLs and generate short links<br>
+        URL shortener allows to create a shortened link making it easy to share
+    </p>
 </section>
 {% endblock content %}
