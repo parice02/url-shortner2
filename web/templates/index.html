@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+
+
+{% block content %}
 <section id="urlbox">
     <h1>Paste the URL to be shortened</h1>
     <form action="shortener.php" method="post">
@@ -11,3 +15,4 @@
     <p class="boxtextcenter">ShortURL is a free tool to shorten URLs and generate short links<br>URL shortener
         allows to create a shortened link making it easy to share</p>
 </section>
+{% endblock content %}
