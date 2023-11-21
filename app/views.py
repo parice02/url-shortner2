@@ -1,6 +1,8 @@
 from string import ascii_letters
 import random
 
+from django.contrib.auth.models import User, Group, Permission
+
 from django.shortcuts import render, redirect
 
 import requests
@@ -18,6 +20,8 @@ def index(request):
 
     if form.is_valid():
         long_url = form.cleaned_data["long_url"]
+
+
         response = requests.get(long_url)
         rand_letters = ""
         if response.ok:
